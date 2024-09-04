@@ -1,27 +1,25 @@
 import React from "react";
 import "./App.css";
+import { Routes, Route, Link } from "react-router-dom";
+
+const Header = () => (
+  <div className="router-container">
+    <Link to="/vue-app">Vue App</Link>
+    <Link to="/react-app">React App</Link>
+  </div>
+);
+
+
+const Home = () => <div>Home</div>;
 
 function App() {
-  function switchRouter(router) {
-    location.pathname = router;
-  }
   return (
     <div>
-      <div className="router-container">
-        <button
-          onClick={() => {
-            switchRouter("vue");
-          }}
-        >
-          Vue app
-        </button>
-        <button onClick={() => switchRouter("react")}>React app</button>
-      </div>
-
-      <div className="app-container">
-        {location.pathname === 'vue' && <div id="vue"></div>}
-        {location.pathname === 'react' && <div id="react"></div>}
-      </div>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+      </Routes>
+      <div className="micro-container" id="micro-apps"></div>
     </div>
   );
 }

@@ -1,4 +1,10 @@
-.router-container{
+.router-container {
   display: flex;
   gap: 16px;
+}
+
+.micro-container {
+  border: 1px solid pink;
+  width: 80vw;
+  height: 50vh;
 }

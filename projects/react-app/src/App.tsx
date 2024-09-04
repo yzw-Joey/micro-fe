@@ -1,7 +1,7 @@
 import React from "react";
 
 function App() {
-  return <div className="App">React App</div>;
+  return <div className="micro-App">React App</div>;
 }
 
 export default App;

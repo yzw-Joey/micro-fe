@@ -41,5 +41,9 @@ module.exports = {
   devServer: {
     hot: true,
     static: "dev",
+    historyApiFallback: true,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
   },
 };

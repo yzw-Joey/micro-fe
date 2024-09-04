@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
+const packageName = require("./package.json").name;
 
 /**
  * @type {import('webpack').Configuration}
@@ -14,6 +15,9 @@ module.exports = {
     filename: "main.js",
     path: path.join(__dirname, "dev"),
     clean: true,
+    library: `${packageName}-[name]`,
+    libraryTarget: "umd",
+    chunkLoadingGlobal: `webpackJsonp_${packageName}`,
   },
   module: {
     rules: [
@@ -41,5 +45,8 @@ module.exports = {
   devServer: {
     hot: true,
     static: "dev",
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
   },
 };
