@@ -2,7 +2,6 @@
   "compilerOptions": {
     "target": "ES2015",
     "baseUrl": "./",
-    "outDir": "lib",
     "sourceMap": true,
     "allowJs": true,
     "module": "es6",
@@ -10,9 +9,6 @@
     "moduleResolution": "node",
     "noImplicitAny": false,
     "jsx": "react",
-    "paths": {
-      "@douyinfe/semi-foundation/*": ["../semi-foundation/*"]
-    },
     "forceConsistentCasingInFileNames": true,
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
@@ -25,5 +21,5 @@
     "strict": true
   },
   "include": ["**/*.tsx", "**/*.ts"],
-  "exclude": ["node_modules", "packages/rollup-plugin-semi-svg"]
+  "exclude": ["node_modules"]
 }

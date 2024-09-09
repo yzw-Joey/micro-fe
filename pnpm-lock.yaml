@@ -23,6 +23,9 @@ dependencies:
   react-router-dom:
     specifier: '6'
     version: 6.26.1(react-dom@18.3.1)(react@18.3.1)
+  single-spa:
+    specifier: ^6.0.1
+    version: 6.0.1
   style-loader:
     specifier: ^4.0.0
     version: 4.0.0(webpack@5.94.0)
@@ -2355,6 +2358,10 @@ packages:
 
   /single-spa@5.9.5:
     resolution: {integrity: sha512-9SQdmsyz4HSP+3gs6PJzhkaMEg+6zTlu9oxIghnwUX3eq+ajq4ft5egl0iyR55LAmO/UwvU8NgIWs/ZyQMa6dw==}
+    dev: false
+
+  /single-spa@6.0.1:
+    resolution: {integrity: sha512-JsJSnjaeBJ+uZCqKwfI06AsaHlqfr2jvDqz+1we8tDxptYnDEi54C2M6W0XY2FLroro9Wnh3+ooEUEwcOileGg==}
     dev: false
 
   /sockjs@0.3.24:

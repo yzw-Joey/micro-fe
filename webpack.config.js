@@ -46,4 +46,5 @@ module.exports = {
       "Access-Control-Allow-Origin": "*",
     },
   },
+  devtool: "source-map",
 };
